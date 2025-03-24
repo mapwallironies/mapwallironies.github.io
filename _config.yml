@@ -6,3 +6,10 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+navigation:
+  - title: Home
+    url: /
+  - title: Photography
+    url: /photography/
+  - title: About
+    url: /about/
