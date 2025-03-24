@@ -1,3 +1,9 @@
 title: "Map Wall Ironies"
 description: "William Pearson"
-theme: "minimal-mistakes-jekyll"
+theme: none
+defaults:
+  - scope:
+      path: ""
+    values:
+      css:
+        - "/assets/css/custom.css"
