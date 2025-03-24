@@ -1,42 +1,27 @@
-sass:
-  style: compressed
-  load_paths:
-    - "assets/css/custom.css"
-/* Set British Racing Green as a secondary color */
-:root {
-  --british-green: #004B36;
-}
-
-/* Update link colors to the new green */
+/* Directly apply British Racing Green color */
 a {
-  color: var(--british-green);
+  color: #004B36;
 }
 
 a:hover,
 a:focus {
-  color: #2C7B63; /* Lighter green on hover */
+  color: #2C7B63;
 }
 
-/* Modify the background of the header or footer to use green */
 header {
-  background-color: var(--british-green);
+  background-color: #004B36;
 }
 
 footer {
-  background-color: var(--british-green);
+  background-color: #004B36;
 }
 
-/* Accent buttons or other elements with the green color */
-button,
-input[type="submit"],
-input[type="button"] {
-  background-color: var(--british-green);
+button, input[type="submit"], input[type="button"] {
+  background-color: #004B36;
   color: white;
   border: none;
 }
 
-button:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover {
-  background-color: #2C7B63; /* Lighter green for hover effect */
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #2C7B63;
 }
