@@ -10,4 +10,6 @@ Welcome to my urban photography collection. Here you'll find shots from cityscap
 
 ![Urban Sample]( {{ site.baseurl }}/assets/images/TowerbridgeUnder.JPEG)
 
-<!-- Add more urban photos here -->
+![Urban Sample]( {{ site.baseurl }}/assets/images/DatchetSunset.JPEG)
+
+![Urban Sample]( {{ site.baseurl }}/assets/images/LondonSkyline.JPEG)
