@@ -1,7 +1,14 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+
 # Welcome to My Portfolio
 
-This is my portfolio showcasing my photography and artwork.
+This is a collection of my photography and artwork.
 
-## About Me
-
-Learn more about my work and passions.
+Explore the links below to see my work:
+- [Photography](photography)
+- [Artwork](artwork)
+- [About](about)
