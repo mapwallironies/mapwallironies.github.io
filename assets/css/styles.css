@@ -30,3 +30,20 @@
 .photo-link-item:hover .link-text {
   color: #00b300;  /* Optional: change the color when hovered */
 }
+
+.photo-link-item {
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* You can adjust the height as needed */
+  display: block;
+  position: relative;
+  color: white;
+}
+
+.photo-link-item .link-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional, adds a slight dark background behind text */
+  padding: 5px;
+}
