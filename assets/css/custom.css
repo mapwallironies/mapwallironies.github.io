@@ -1,7 +1,7 @@
 /* Custom CSS for Landing Page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f0e6d2; /* Eggshell color */
     color: #333;
     text-align: center;
     margin: 0;
@@ -31,3 +31,18 @@ a:hover {
     color: white;
     border-radius: 5px;
 }
+
+/* New Styles */
+button {
+    background-color: #2a5d3d; /* British Racing Green */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1d4c
