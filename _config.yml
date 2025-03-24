@@ -1,6 +1,6 @@
 title: "Map Wall Ironies"
 description: "William Pearson"
-theme: none
+theme: ""
 defaults:
   - scope:
       path: ""
