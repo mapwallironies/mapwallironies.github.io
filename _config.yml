@@ -2,4 +2,4 @@ title: "Map Wall Ironies"
 description: "A portfolio of my photography and artwork"
 baseurl: ""
 url: "https://mapwallironies.github.io"
-theme: minima
+theme: jekyll-theme-slate
