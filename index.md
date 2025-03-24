@@ -7,6 +7,6 @@ title: Home
 
 This is the homepage. Feel free to check out my other pages:
 
-- [Photography](/photography/)
-- [Artwork](/artwork/)
-- [About](/about/)
+- [Photography](pages/photography/)
+- [Artwork](pages/artwork/)
+- [About](pages/about/)
