@@ -3,10 +3,6 @@ layout: default
 title: "Welcome to My Portfolio"
 ---
 
-# Hello! I'm William Pearson
+![William Pearson's Portrait](assets/images/WPParis1.JPEG)
 
-Welcome to my portfolio website. Here you’ll find a showcase of my work, including photography, artwork, and more. Please check out my various pages to learn more about my projects!
-
-- [Photography](#)
-- [Artwork](#)
-- [About Me](#)
+Hello! I'm William Pearson, and this is my portfolio. Here you'll find my photography, artwork, and more.
