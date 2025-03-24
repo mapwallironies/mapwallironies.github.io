@@ -8,6 +8,6 @@ permalink: /photography/urban/
 
 Welcome to my urban photography collection. Here you'll find shots from cityscapes, architecture, street scenes, and more.
 
-![Urban Sample]( {{ site.baseurl }}/assets/images/Urban1.jpg )
+![Urban Sample]( {{ site.baseurl }}/assets/images/TowerbridgeUnder.JPEG )
 
 <!-- Add more urban photos here -->
