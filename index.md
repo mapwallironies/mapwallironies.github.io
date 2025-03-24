@@ -4,7 +4,7 @@ title: "Welcome to My Portfolio"
 ---
 
 <section class="hero">
-  <img src="assets/images/WPParis1.JPEG" alt="Hero Image">
+  <img src="assets/images/WPParis1.JPEG" alt="Hero Image" class="hero-image">
   <div class="hero-text">
     <h1>Welcome to My Portfolio</h1>
     <p>Explore My Photography, Artwork, and More!</p>
