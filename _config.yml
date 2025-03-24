@@ -20,3 +20,8 @@ header_pages:
   - index.md
   - photography.md
   - about.md
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
