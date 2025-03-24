@@ -1,3 +1,3 @@
 title: "My Portfolio"
 description: "Showcasing my photography, artwork, and more."
-theme: "minimal-mistakes-jekyll"  # This will set the theme
+theme: "jekyll/minima"
