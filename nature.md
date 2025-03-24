@@ -8,6 +8,6 @@ permalink: /photography/nature/
 
 Here are some of my favorite nature shots — landscapes, wildlife, and all things natural.
 
-![Nature Sample]( {{ site.baseurl }}/assets/images/Aurora1.JPEG)
+![Nature Sample](https://mapwallironies.github.io/assets/images/Aurora1.JPEG)
 
 <!-- Add more nature photos here -->
