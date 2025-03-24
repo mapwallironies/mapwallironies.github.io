@@ -16,3 +16,7 @@ navigation:
 exclude: 
   - photography/urban.md
   - photography/nature.md
+header_pages:
+  - index.md
+  - photography.md
+  - about.md
