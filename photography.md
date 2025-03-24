@@ -8,16 +8,16 @@ permalink: /photography/
 
 Welcome to my photography collection. Explore my work across different categories.
 
-<!-- Urban Photography Section -->
+<!-- Urban Photography Link -->
 <div class="photo-link">
-  <a href="/photography/urban/" class="photo-link-item" style="background-image: url('/assets/images/TowerbridgeUnder.JPEG');">
+  <a href="/photography/urban/" class="photo-link-item" style="background-image: url('{{ site.baseurl }}/assets/images/TowerbridgeUnder.JPEG');">
     <div class="link-text">Urban Photography</div>
   </a>
 </div>
 
-<!-- Natural Photography Section -->
+<!-- Nature Photography Link -->
 <div class="photo-link">
-  <a href="/photography/nature/" class="photo-link-item" style="background-image: url('/assets/images/Aurora1.JPEG');">
+  <a href="/photography/nature/" class="photo-link-item" style="background-image: url('{{ site.baseurl }}/assets/images/Aurora1.JPEG');">
     <div class="link-text">Natural Photography</div>
   </a>
 </div>
