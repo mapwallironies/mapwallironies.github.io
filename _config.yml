@@ -8,3 +8,6 @@ defaults:
     values:
       css:
         - "/assets/css/custom.css"
+      js:
+        - "/assets/js/carousel.js"
+        
