@@ -45,4 +45,13 @@ button {
 }
 
 button:hover {
-    background-color: #1d4c
+    background-color: #1d4c2e; /* Darker shade of British Racing Green */
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;  /* Make images scale according to the container */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Prevents any space under the image */
+    margin: 0 auto;   /* Center images */
+}
