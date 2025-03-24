@@ -1,4 +1,8 @@
 ---
+layout: default
+include_head: true
+---
+---
 layout: home
 title: "Welcome to My Portfolio"
 ---
