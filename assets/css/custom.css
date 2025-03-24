@@ -50,8 +50,9 @@ button:hover {
 
 /* Image Styles */
 img {
-    max-width: 100%;  /* Make images scale according to the container */
-    height: auto;     /* Maintain aspect ratio */
-    display: block;   /* Prevents any space under the image */
-    margin: 0 auto;   /* Center images */
+    width: 100%;        /* Ensure the image takes up 100% of its container */
+    height: auto;       /* Maintain aspect ratio */
+    max-width: 100%;    /* Prevent images from stretching beyond their container */
+    display: block;     /* Remove any space below images */
+    margin: 20px auto;  /* Center the images with spacing */
 }
