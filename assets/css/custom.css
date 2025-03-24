@@ -1,17 +1,14 @@
-/* Carousel styles */
-.carousel {
-  display: flex;
-  overflow: hidden;
-  position: relative;
+/* Photography Grid Styles */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
 }
 
-.carousel img {
+.photo-grid img {
   width: 100%;
   height: auto;
-  transition: transform 0.5s ease;
-  object-fit: cover;
-}
-
-.carousel img:not(:first-child) {
-  display: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
