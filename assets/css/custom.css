@@ -1,16 +1,17 @@
-/* Custom background and green text */
-body {
-  background-color: #f8f8f8; /* Light grey background */
+/* Carousel styles */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
 }
 
-h1, h2, h3 {
-  color: #006400; /* British Racing Green */
+.carousel img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  object-fit: cover;
 }
 
-p {
-  color: #006400; /* Also green for paragraph text */
-}
-
-a {
-  color: #006400; /* Green links */
+.carousel img:not(:first-child) {
+  display: none;
 }
