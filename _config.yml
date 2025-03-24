@@ -13,3 +13,6 @@ navigation:
     url: /photography/
   - title: About
     url: /about/
+exclude: 
+  - photography/urban.md
+  - photography/nature.md
