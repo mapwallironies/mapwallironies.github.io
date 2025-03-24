@@ -1,6 +1,7 @@
 title: "Map Wall Ironies"
 description: "William Pearson"
 theme: "minima"
+
 defaults:
   - scope:
       path: ""
