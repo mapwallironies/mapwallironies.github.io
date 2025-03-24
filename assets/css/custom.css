@@ -1,10 +1,16 @@
-/* Custom background and text colors */
+/* Custom background and green text */
 body {
-  background-color: #f8f8f8; /* Light background */
+  background-color: #f8f8f8; /* Light grey background */
 }
 
 h1, h2, h3 {
   color: #006400; /* British Racing Green */
 }
 
-/* Add other custom styles here */
+p {
+  color: #006400; /* Also green for paragraph text */
+}
+
+a {
+  color: #006400; /* Green links */
+}
