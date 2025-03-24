@@ -1,8 +1,10 @@
+/* Custom background and text colors */
 body {
-  background-color: #f0f0f0;  /* A light background */
+  background-color: #f8f8f8; /* Light background */
 }
 
 h1, h2, h3 {
-  color: #006400;  /* British Racing Green for headings */
+  color: #006400; /* British Racing Green */
 }
-``
+
+/* Add other custom styles here */
