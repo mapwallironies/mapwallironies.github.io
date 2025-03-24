@@ -10,4 +10,10 @@ Here are some of my favorite nature shots — landscapes, wildlife, and all thin
 
 ![Nature Sample](https://mapwallironies.github.io/assets/images/Aurora1.JPEG)
 
-<!-- Add more nature photos here -->
+![Nature Sample](https://mapwallironies.github.io/assets/images/Aurora2.JPEG)
+
+![Nature Sample](https://mapwallironies.github.io/assets/images/KewStatue.JPEG)
+
+![Nature Sample](https://mapwallironies.github.io/assets/images/NorthShoreSunset.JPG)
+
+![Nature Sample](https://mapwallironies.github.io/assets/images/InterlakenFlowers.JPEG)
