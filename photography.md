@@ -1,18 +1,23 @@
 ---
-layout: default
-title: Photography
+layout: page
+title: "Photography"
 permalink: /photography/
 ---
 
-# My Photography
+# Photography Collection 📸
 
-Here are some of my favorite photography works. I love capturing moments in nature, the city, and everything in between.
+Welcome to my photography collection. Explore my work across different categories.
 
-<div class="photo-grid">
-  <img src="{{ '/assets/images/photo1.jpg' | relative_url }}" alt="Photo 1">
-  <img src="{{ '/assets/images/photo2.jpg' | relative_url }}" alt="Photo 2">
-  <img src="{{ '/assets/images/photo3.jpg' | relative_url }}" alt="Photo 3">
-  <img src="{{ '/assets/images/photo4.jpg' | relative_url }}" alt="Photo 4">
+<div class="photo-link">
+  <a href="/photography/urban/" class="photo-link-item" style="background-image: url('{{ site.baseurl }}/assets/images/Urban1.jpg');">
+    <div class="link-text">Urban Photography</div>
+  </a>
 </div>
 
-Feel free to browse more of my work in the gallery sections!
+<div class="photo-link">
+  <a href="/photography/nature/" class="photo-link-item" style="background-image: url('{{ site.baseurl }}/assets/images/Nature1.jpg');">
+    <div class="link-text">Natural Photography</div>
+  </a>
+</div>
+
+⬅ [Back to Home]( / )
