@@ -2,26 +2,16 @@ title: "Map Wall Ironies"
 description: "A portfolio of my photography and artwork"
 baseurl: ""  # Leave empty unless using a subpath
 url: "https://mapwallironies.github.io"
-theme: minima
+
+theme: minimal-mistakes-jekyll
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-navigation:
-  - title: Home
-    url: /
-  - title: Photography
-    url: /photography/
-  - title: About
-    url: /about/
-exclude: 
-  - photography/urban.md
-  - photography/nature.md
-header_pages:
-  - index.md
-  - photography.md
-  - about.md
+  - jekyll-sitemap
+
 defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: "single"
