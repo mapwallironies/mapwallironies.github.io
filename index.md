@@ -12,3 +12,5 @@ Explore the links below to see my work:
 - [Photography](photography)
 - [Artwork](artwork)
 - [About](about)
+
+[Home](/) | [Photography](/photography/) | [About](/about/)
