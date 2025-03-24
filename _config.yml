@@ -2,4 +2,4 @@ title: "Map Wall Ironies"
 description: "A portfolio of my photography and artwork"
 baseurl: ""  # Leave empty unless using a subpath
 url: "https://mapwallironies.github.io"
-theme: slate
+theme: jekyll-theme-slate
