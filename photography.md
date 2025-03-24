@@ -9,8 +9,8 @@ permalink: /photography/
 Here is a collection of my photography work displayed in a simple carousel.
 
 <div class="carousel">
-  <img src="/assets/images/photo1.jpg" alt="Photo 1">
-  <img src="/assets/images/photo2.jpg" alt="Photo 2">
-  <img src="/assets/images/photo3.jpg" alt="Photo 3">
+  <img src="/assets/images/Aurora1.JPEG" alt="Aurora 1">
+  <img src="/assets/images/KewStatue.JPEG" alt="KewStatue">
+  <img src="/assets/images/TowerbridgeUnder.JPEG" alt="TowerbridgeUnder">
 </div>
 
