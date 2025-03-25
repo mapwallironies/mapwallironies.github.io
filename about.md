@@ -3,7 +3,7 @@ layout: default
 title: "About Me"
 ---
 
-<section class="about-contact">
+<section id="about" class="about-contact">
   <div class="about">
     <h1>About MWI</h1>
     <p>Hi there, and thanks for stopping by.</p>
