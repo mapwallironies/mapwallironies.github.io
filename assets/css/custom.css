@@ -3,7 +3,7 @@ html, body {
     height: 100%;  /* Ensure the body takes up the full height */
     margin: 0;     /* Remove default margin */
     padding: 0;    /* Remove default padding */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow: hidden; /* Prevent both vertical and horizontal scrolling */
 }
 
 /* Hero Section */
@@ -11,7 +11,7 @@ html, body {
     position: relative;
     height: 100vh;  /* Full viewport height */
     background-image: url('assets/images/WPParis1.JPEG');
-    background-size: cover;  /* Make the image cover the whole screen */
+    background-size: contain;  /* Scale image down to fit (adjusts zoom) */
     background-position: center;  /* Keep the image centered */
     background-repeat: no-repeat; /* Prevent repetition of the image */
     display: flex;
