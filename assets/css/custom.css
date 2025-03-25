@@ -70,7 +70,7 @@ button:hover {
 /* Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Align the nav links to the right */
     align-items: center;
     background-color: #2a5d3d; /* British Racing Green */
     padding: 15px 20px;
@@ -80,15 +80,6 @@ button:hover {
     width: 100%;
     z-index: 1000;
     box-sizing: border-box; /* Ensure padding doesn't affect width */
-    flex-wrap: wrap; /* Allow wrapping of links if necessary */
-}
-
-.site-title {
-    font-size: 24px;
-    color: white;
-    font-family: 'Antic Didone', serif;
-    margin: 0;
-    flex: 1 1 100%; /* Ensure the title takes full width when wrapping */
 }
 
 .nav-links {
@@ -97,9 +88,6 @@ button:hover {
     gap: 15px;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap; /* Allow wrapping of links if necessary */
-    justify-content: flex-end; /* Align links to the right */
-    width: 100%; /* Ensure the links take up full width */
 }
 
 .nav-links li {
@@ -119,4 +107,21 @@ button:hover {
 .nav-links a:hover {
     background-color: white;
     color: #2a5d3d;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
 }
