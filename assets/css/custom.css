@@ -29,7 +29,7 @@ html, body {
 /* Right Column (Image) */
 .hero-image {
     flex: 1;
-    background-image: url('assets/images/WPParis1.JPEG'); /* Replace with your image path */
+    background-image: url('/assets/images/WPParis1.JPEG'); /* Ensure the correct file path */
     background-size: cover;
     background-position: center;
     height: 80%;  /* Adjust height as needed */
