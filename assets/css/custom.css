@@ -1,8 +1,12 @@
+/* Add Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
 /* Ensure body and html fill the entire screen and remove unnecessary space */
 html, body {
     height: 100%;  /* Ensure the body takes up the full height */
     margin: 0;     /* Remove default margin */
     padding: 0;    /* Remove default padding */
+    font-family: 'Montserrat', sans-serif;  /* Apply Montserrat to body */
 }
 
 /* Hero Section */
@@ -29,8 +33,9 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 36px;
-    font-family: 'Antic Didone', serif;
+    font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);  /* Adds a subtle black outline */
+    text-transform: uppercase;  /* Make title text uppercase */
 }
 
 /* Navbar Styles */
@@ -45,6 +50,7 @@ html, body {
     left: 0;
     width: 100%;
     z-index: 1000;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
 }
 
 /* Navbar Links */
@@ -66,6 +72,8 @@ html, body {
     font-size: 18px;
     padding: 8px 12px;
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
+    text-transform: uppercase;  /* Make navbar links uppercase */
 }
 
 .nav-links a:hover {
@@ -83,6 +91,8 @@ footer {
     background-color: rgba(42, 93, 61, 0.8); /* Semi-transparent background */
     color: white;
     text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
+    text-transform: uppercase;  /* Make footer text uppercase */
 }
 
 .site-title {
@@ -194,5 +204,3 @@ header {
         max-width: 100%;
     }
 }
-
-
