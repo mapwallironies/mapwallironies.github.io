@@ -182,25 +182,14 @@ header {
     color: #2a5d3d; /* Green color */
 }
 
-/* Adjusting the About section if needed */
+/* Adjusting the About section */
 .about h1 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #2a5d3d; /* Green color to match Contact section */
 }
 
 .about p {
     font-size: 18px;
     line-height: 1.6;
-}
-
-/* Make sections more mobile-responsive */
-@media (max-width: 768px) {
-    .about-contact {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .about, .contact {
-        max-width: 100%;
-    }
 }
