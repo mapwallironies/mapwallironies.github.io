@@ -134,36 +134,42 @@ header {
 /* Contact Section */
 .contact {
     margin-top: 50px;
-    max-width: 80%;  /* Limit width to keep it in line with the About section */
+    max-width: 70%;  /* Reduced width for smaller contact section */
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
+    padding: 20px;  /* Reduced padding */
     background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;  /* Slightly smaller border radius */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Contact Heading */
 .contact h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;  /* Smaller font size */
     font-family: 'Antic Didone', serif;
     margin-bottom: 20px;
+    color: #2a5d3d;
 }
 
+/* Contact Form */
 .contact form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;  /* Reduced gap between fields */
 }
 
+/* Label Style */
 .contact label {
-    font-size: 1rem;
+    font-size: 0.9rem;  /* Smaller label size */
     font-weight: bold;
+    color: #2a5d3d;
 }
 
+/* Input and Textarea Styling */
 .contact input, 
 .contact textarea {
-    padding: 12px;
-    font-size: 1rem;
+    padding: 10px;  /* Reduced padding */
+    font-size: 0.9rem;  /* Smaller font size */
     border: 2px solid #2a5d3d;
     border-radius: 5px;
     background-color: #f5f5f5;
@@ -179,14 +185,15 @@ header {
 
 .contact textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 80px;  /* Reduced minimum height */
 }
 
+/* Button Styling */
 .contact button {
-    padding: 12px 20px;
+    padding: 10px 18px;  /* Reduced button padding */
     background-color: #2a5d3d;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;  /* Smaller font size */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -196,3 +203,4 @@ header {
 .contact button:hover {
     background-color: #3c8d57;
 }
+
