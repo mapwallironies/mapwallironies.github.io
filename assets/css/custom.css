@@ -11,16 +11,12 @@ html, body {
     position: relative;
     height: 100vh;  /* Full viewport height */
     width: 100%;   /* Full viewport width */
-    background-image: url('assets/images/WPParis1.JPEG');
-    background-size: cover;  /* Make the image cover the entire screen */
-    background-position: center center;  /* Keep the image centered */
-    background-repeat: no-repeat; /* Prevent repetition of the image */
-    background-attachment: fixed; /* Fixed background position */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;  /* Ensure text stands out on image */
+    color: white;  /* Ensure text stands out on background */
     text-align: center;
+    background-color: #333; /* Temporary solid background color */
     z-index: 1;
 }
 
