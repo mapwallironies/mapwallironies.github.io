@@ -139,3 +139,88 @@ header {
         height: auto;  /* Allow the hero section to adjust its height based on content */
     }
 }
+
+/* About and Contact Sections - Scoped for this page only */
+.about-contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact {
+    flex: 1;
+    max-width: 45%;
+}
+
+/* Contact Form Styling */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a5d3d; /* Green color */
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #2a5d3d; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background-color: #1e4d31; /* Darker green on hover */
+}
+
+/* Styling the "Contact Me" section title */
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2a5d3d; /* Green color */
+}
+
+/* Adjusting the About section */
+.about h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2a5d3d; /* Green color to match Contact section */
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Make sections more mobile-responsive */
+ @media (max-width: 768px) {
+     .about-contact {
+         flex-direction: column;
+         gap: 20px;
+     }
+ 
+     .about, .contact {
+         max-width: 100%;
+     }
+ }
