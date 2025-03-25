@@ -111,96 +111,88 @@ header {
     }
 }
 
-/* About Section */
-.about {
+/* About and Contact Sections - Scoped for this page only */
+.about-contact {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 50px;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.about-text {
-    max-width: 60%;
+.about {
+    flex: 1;
+    max-width: 45%;
 }
 
-.about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Contact Section */
 .contact {
-    margin-top: 50px;
-    max-width: 70%;  /* Reduced width for smaller contact section */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;  /* Reduced padding */
-    background-color: #f9f9f9;
-    border-radius: 8px;  /* Slightly smaller border radius */
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 45%;
 }
 
-/* Contact Heading */
-.contact h2 {
-    font-size: 1.5rem;  /* Smaller font size */
-    font-family: 'Antic Didone', serif;
-    margin-bottom: 20px;
-    color: #2a5d3d;
-}
-
-/* Contact Form */
+/* Contact Form Styling */
 .contact form {
     display: flex;
     flex-direction: column;
-    gap: 15px;  /* Reduced gap between fields */
+    gap: 15px;
 }
 
-/* Label Style */
 .contact label {
-    font-size: 0.9rem;  /* Smaller label size */
+    font-size: 18px;
     font-weight: bold;
-    color: #2a5d3d;
+    color: #2a5d3d; /* Green color */
 }
 
-/* Input and Textarea Styling */
-.contact input, 
-.contact textarea {
-    padding: 10px;  /* Reduced padding */
-    font-size: 0.9rem;  /* Smaller font size */
-    border: 2px solid #2a5d3d;
+.contact input, .contact textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
     border-radius: 5px;
-    background-color: #f5f5f5;
-    color: #333;
-    width: 100%;
 }
 
-.contact input:focus, 
-.contact textarea:focus {
-    border-color: #2a5d3d;
-    outline: none;
-}
-
-.contact textarea {
-    resize: vertical;
-    min-height: 80px;  /* Reduced minimum height */
-}
-
-/* Button Styling */
 .contact button {
-    padding: 10px 18px;  /* Reduced button padding */
-    background-color: #2a5d3d;
+    background-color: #2a5d3d; /* Green color */
     color: white;
-    font-size: 0.9rem;  /* Smaller font size */
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
 .contact button:hover {
-    background-color: #3c8d57;
+    background-color: #1e4d31; /* Darker green on hover */
 }
+
+/* Styling the "Contact Me" section title */
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2a5d3d; /* Green color */
+}
+
+/* Adjusting the About section if needed */
+.about h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Make sections more mobile-responsive */
+@media (max-width: 768px) {
+    .about-contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about, .contact {
+        max-width: 100%;
+    }
+}
+
 
