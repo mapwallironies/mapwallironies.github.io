@@ -184,13 +184,13 @@ header {
 
 /* Adjusting the About section */
 .about h1 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
     color: #2a5d3d; /* Green color to match Contact section */
 }
 
 .about p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
