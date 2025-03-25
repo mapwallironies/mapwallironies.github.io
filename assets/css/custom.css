@@ -20,6 +20,7 @@ html, body {
     color: white;  /* Ensure text stands out on image */
     text-align: center;
     overflow: hidden; /* Prevent scrollbars */
+    margin-top: 0;  /* Ensure there's no margin on top */
 }
 
 /* Title Section (On top of the image) */
