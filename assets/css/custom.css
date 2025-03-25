@@ -1,4 +1,11 @@
-/* Custom CSS for Landing Page */
+/* Resetting margins and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general page styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0e6d2; /* Eggshell color */
@@ -8,90 +15,64 @@ body {
     padding: 0;
 }
 
-h1 {
-    font-size: 36px;
-    color: #2a5d3d; /* British Racing Green */
-    margin-top: 100px;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-a {
-    font-size: 18px;
-    color: #2a5d3d;
-    text-decoration: none;
-    padding: 8px;
-}
-
-a:hover {
-    background-color: #2a5d3d;
-    color: white;
-    border-radius: 5px;
-}
-
-/* New Styles */
-button {
-    background-color: #2a5d3d; /* British Racing Green */
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #1d4c2e; /* Darker shade of British Racing Green */
-}
-
-/* Responsive image styling for portfolio images */
-.portfolio-image {
+/* Hero Section */
+.hero {
+    position: relative;
     width: 100%;
-    max-width: 300px; /* You can adjust this value */
-    height: 300px; /* Set a consistent height */
-    object-fit: cover; /* Ensures images maintain their aspect ratio */
-    margin: 10px;
-    display: inline-block;  /* Makes the images inline so they align in a row */
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Hero image styling */
 .hero-image {
     width: 100%;
-    max-width: 1000px;  /* Adjust max-width to suit your design */
-    height: auto;
-    margin: 0 auto;  /* Centers the image */
-    display: block;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Keeps image in the background */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-family: 'Antic Didone', serif;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 300;
 }
 
 /* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: flex-end; /* Align the nav links to the right */
-    align-items: center;
-    background-color: #2a5d3d; /* British Racing Green */
-    padding: 15px 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: rgba(42, 93, 61, 0.8); /* Transparent British Racing Green */
+    padding: 10px 0;
     z-index: 1000;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
 }
 
 .nav-links li {
     display: inline;
+    margin: 0 15px;
 }
 
 .nav-links a {
@@ -100,28 +81,10 @@ button:hover {
     font-size: 18px;
     padding: 8px 12px;
     border-radius: 5px;
-    margin-right: 10px; /* Add margin to create space between the links */
-    flex-shrink: 0; /* Prevent shrinking of individual links */
+    transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
     background-color: white;
-    color: #2a5d3d;
-}
-
-/* Add some responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links li {
-        margin-bottom: 10px;
-    }
+    color: #2a5d3d; /* British Racing Green */
 }
