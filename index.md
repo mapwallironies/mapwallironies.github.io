@@ -3,6 +3,19 @@ layout: default
 title: "Portfolio"
 ---
 
+<header class="navbar">
+  <h1 class="site-title">William Pearson</h1>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="artwork.html">Artwork</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 <section class="hero">
   <img src="assets/images/WPParis1.JPEG" alt="Hero Image" class="hero-image">
   <div class="hero-text">
