@@ -3,6 +3,7 @@ html, body {
     height: 100%;  /* Ensure the body takes up the full height */
     margin: 0;     /* Remove default margin */
     padding: 0;    /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Hero Section */
@@ -12,12 +13,14 @@ html, body {
     background-image: url('assets/images/WPParis1.JPEG');
     background-size: cover;  /* Make the image cover the whole screen */
     background-position: center;  /* Keep the image centered */
+    background-attachment: fixed; /* Fix the image while scrolling */
     background-repeat: no-repeat; /* Prevent repetition of the image */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;  /* Ensure text stands out on image */
     text-align: center;
+    overflow: hidden; /* Prevent scrollbars */
 }
 
 /* Title Section (On top of the image) */
