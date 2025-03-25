@@ -1,9 +1,9 @@
-/* Ensure body and html fill the entire screen and remove unnecessary space */
+/* Remove default margins and paddings */
 html, body {
-    height: 100%;  /* Ensure the body takes up the full height */
+    height: 100%;  /* Ensure full height for the page */
     margin: 0;     /* Remove default margin */
     padding: 0;    /* Remove default padding */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Hero Section */
@@ -29,7 +29,7 @@ html, body {
 /* Right Column (Image) */
 .hero-image {
     flex: 1;
-    background-image: url('/assets/images/WPParis1.JPEG'); /* Ensure the correct file path */
+    background-image: url('/assets/images/WPParis1.JPEG'); /* Ensure correct file path */
     background-size: cover;
     background-position: center;
     height: 80%;  /* Adjust height as needed */
@@ -74,4 +74,9 @@ html, body {
 .nav-links a:hover {
     background-color: white;
     color: #2a5d3d;
+}
+
+/* Title and Footer */
+footer, .site-title {
+    display: none; /* Hide title and footer */
 }
