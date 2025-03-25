@@ -10,11 +10,12 @@ html, body {
 .hero {
     position: relative;
     height: 100vh;  /* Full viewport height */
-    width: 100vw;   /* Full viewport width */
+    width: 100%;   /* Full viewport width */
     background-image: url('assets/images/WPParis1.JPEG');
-    background-size: contain;  /* Ensure the whole image fits in the viewport */
+    background-size: cover;  /* Make the image cover the entire screen */
     background-position: center center;  /* Keep the image centered */
     background-repeat: no-repeat; /* Prevent repetition of the image */
+    background-attachment: fixed; /* Fixed background position */
     display: flex;
     justify-content: center;
     align-items: center;
