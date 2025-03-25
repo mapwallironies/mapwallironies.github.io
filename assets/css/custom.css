@@ -46,6 +46,8 @@ html, body {
     left: 0;
     width: 100%;
     z-index: 1000;
+    margin: 0; /* Remove any extra margin */
+    box-sizing: border-box; /* Ensure no padding or margin adds extra space */
 }
 
 /* Navbar Links */
