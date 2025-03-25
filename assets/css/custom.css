@@ -88,6 +88,7 @@ button:hover {
     color: white;
     font-family: 'Antic Didone', serif;
     margin: 0;
+    flex: 1 1 100%; /* Ensure the title takes full width when wrapping */
 }
 
 .nav-links {
@@ -96,8 +97,9 @@ button:hover {
     gap: 15px;
     margin: 0;
     padding: 0;
-    width: 100%; /* Ensure links take up full width */
     flex-wrap: wrap; /* Allow wrapping of links if necessary */
+    justify-content: flex-end; /* Align links to the right */
+    width: 100%; /* Ensure the links take up full width */
 }
 
 .nav-links li {
