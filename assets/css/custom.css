@@ -1,39 +1,40 @@
-/* Remove default margins and paddings */
+/* Ensure body and html fill the entire screen and remove unnecessary space */
 html, body {
-    height: 100%;  /* Ensure full height for the page */
+    height: 100%;  /* Ensure the body takes up the full height */
     margin: 0;     /* Remove default margin */
     padding: 0;    /* Remove default padding */
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Hero Section */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
     height: 100vh;  /* Full viewport height */
-    background-color: #2a5d3d; /* Optional background color */
-    padding: 0 20px;  /* Padding for spacing */
+    background-image: url('assets/images/your-image.jpg');
+    background-size: cover;  /* Make the image cover the whole screen */
+    background-position: center;  /* Keep the image centered */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Left Column (Text) */
+/* Title Section (On top of the image) */
 .hero-text {
-    flex: 1;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
     color: white;
     font-family: 'Antic Didone', serif;
-    font-size: 24px;
-    text-align: left;
-    padding: 20px;
 }
 
-/* Right Column (Image) */
-.hero-image {
-    flex: 1;
-    background-image: url('/assets/images/WPParis1.JPEG'); /* Ensure correct file path */
-    background-size: cover;
-    background-position: center;
-    height: 80%;  /* Adjust height as needed */
-    border-radius: 10px;
+.hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin: 10px 0;
 }
 
 /* Navbar Styles */
