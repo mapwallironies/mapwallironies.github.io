@@ -3,30 +3,29 @@ html, body {
     height: 100%;  /* Ensure the body takes up the full height */
     margin: 0;     /* Remove default margin */
     padding: 0;    /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Hero Section */
 .hero {
     position: relative;
     height: 100vh;  /* Full viewport height */
-    width: 100%;    /* Full width */
     background-image: url('assets/images/WPParis1.JPEG');
-    background-size: cover;  /* Cover the entire screen */
-    background-position: center center;  /* Center the image */
+    background-size: cover;  /* Make the image cover the whole screen */
+    background-position: center;  /* Keep the image centered */
     background-repeat: no-repeat; /* Prevent repetition of the image */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;  /* Ensure text stands out on image */
     text-align: center;
-    overflow: hidden; /* Prevent scrollbars */
-    margin-top: 0;  /* Ensure there's no margin on top */
+    z-index: 1;
 }
 
 /* Title Section (On top of the image) */
 .hero-text {
     position: absolute;
-    z-index: 2;  /* Ensures the text is on top of the background */
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -45,9 +44,7 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 3;  /* Ensure navbar is above the hero image */
-    margin: 0; /* Remove any extra margin */
-    box-sizing: border-box; /* Ensure no padding or margin adds extra space */
+    z-index: 1000;
 }
 
 /* Navbar Links */
@@ -76,7 +73,7 @@ html, body {
     color: #2a5d3d;
 }
 
-/* Remove unnecessary footer space (if any) */
+/* Prevent unwanted margins from affecting the content */
 footer {
-    display: none;  /* Hide footer if it exists */
+    margin-top: 0;
 }
