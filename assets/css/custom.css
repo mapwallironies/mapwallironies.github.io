@@ -134,6 +134,13 @@ header {
 /* Contact Section */
 .contact {
     margin-top: 50px;
+    max-width: 80%;  /* Limit width to keep it in line with the About section */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact h2 {
