@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Map Wall Ironies - Portfolio"
+title: "Portfolio"
 ---
 
 <section class="hero">
