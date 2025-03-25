@@ -26,7 +26,7 @@ html, body {
 /* Title Section (On top of the image) */
 .hero-text {
     position: absolute;
-    z-index: 1;
+    z-index: 2;  /* Ensures the text is on top of the background */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -45,7 +45,7 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 3;  /* Ensure navbar is above the hero image */
     margin: 0; /* Remove any extra margin */
     box-sizing: border-box; /* Ensure no padding or margin adds extra space */
 }
