@@ -38,7 +38,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(42, 93, 61, 0.8); /* Semi-transparent background */
+    background-color: rgba(42, 93, 61, 0.8) !important; /* Semi-transparent background */
     padding: 15px;
     position: fixed;
     top: 0;
