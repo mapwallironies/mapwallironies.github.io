@@ -6,7 +6,7 @@ title: "Map Wall Ironies - Portfolio"
 <section class="hero">
   <img src="assets/images/WPParis1.JPEG" alt="Hero Image" class="hero-image">
   <div class="hero-text">
-    <h1>Made and Remebered</h1>
+    <h1>Made and Remembered</h1>
     <p>Seeing, creating, and inspirations</p>
     <a href="#portfolio" class="cta-button">View My Work</a>
   </div>
