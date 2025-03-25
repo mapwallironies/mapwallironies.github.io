@@ -8,27 +8,32 @@ html, body {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    height: 100vh;  /* Full viewport height */
-    width: 100%;   /* Full viewport width */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    color: white;  /* Ensure text stands out on background */
-    text-align: center;
-    background-color: #333; /* Temporary solid background color */
-    z-index: 1;
+    height: 100vh;  /* Full viewport height */
+    background-color: #2a5d3d; /* Optional background color */
+    padding: 0 20px;  /* Padding for spacing */
 }
 
-/* Title Section (On top of the image) */
+/* Left Column (Text) */
 .hero-text {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 36px;
+    flex: 1;
+    color: white;
     font-family: 'Antic Didone', serif;
+    font-size: 24px;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Right Column (Image) */
+.hero-image {
+    flex: 1;
+    background-image: url('assets/images/WPParis1.JPEG'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 80%;  /* Adjust height as needed */
+    border-radius: 10px;
 }
 
 /* Navbar Styles */
