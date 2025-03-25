@@ -193,3 +193,15 @@ header {
     font-size: 18px;
     line-height: 1.6;
 }
+
+/* Make sections more mobile-responsive */
+ @media (max-width: 768px) {
+     .about-contact {
+         flex-direction: column;
+         gap: 20px;
+     }
+ 
+     .about, .contact {
+         max-width: 100%;
+     }
+ }
