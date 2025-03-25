@@ -91,3 +91,8 @@ footer {
 .site-title {
     display: none; /* Hide the site title to prevent unnecessary space */
 }
+
+/* Remove unnecessary space at the top caused by the header */
+header {
+    display: none;  /* Hide the header element */
+}
