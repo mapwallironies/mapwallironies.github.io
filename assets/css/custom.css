@@ -79,6 +79,8 @@ button:hover {
     left: 0;
     width: 100%;
     z-index: 1000;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    flex-wrap: wrap; /* Allow wrapping of links if necessary */
 }
 
 .site-title {
@@ -94,6 +96,8 @@ button:hover {
     gap: 15px;
     margin: 0;
     padding: 0;
+    width: 100%; /* Ensure links take up full width */
+    flex-wrap: wrap; /* Allow wrapping of links if necessary */
 }
 
 .nav-links li {
@@ -107,6 +111,7 @@ button:hover {
     padding: 8px 12px;
     border-radius: 5px;
     margin-right: 10px; /* Add margin to create space between the links */
+    flex-shrink: 0; /* Prevent shrinking of individual links */
 }
 
 .nav-links a:hover {
