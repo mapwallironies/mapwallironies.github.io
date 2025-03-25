@@ -92,3 +92,20 @@ footer {
 header {
     display: none;  /* Hide the header element */
 }
+
+/* Mobile / Small Screen Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;  /* Allow items to wrap to next line */
+        justify-content: center;  /* Center the items */
+    }
+
+    .nav-links a {
+        font-size: 16px;  /* Reduce font size for smaller screens */
+        padding: 10px 15px;  /* Adjust padding for smaller screen */
+    }
+}
