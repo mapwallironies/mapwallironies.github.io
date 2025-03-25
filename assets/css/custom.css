@@ -30,6 +30,7 @@ html, body {
     transform: translate(-50%, -50%);
     font-size: 36px;
     font-family: 'Antic Didone', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Adds a subtle black outline */
 }
 
 /* Navbar Styles */
