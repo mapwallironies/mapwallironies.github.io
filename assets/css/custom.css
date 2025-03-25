@@ -6,7 +6,11 @@ body {
     height: 100%;
     background: url('assets/images/WPParis1.JPEG') no-repeat center center fixed; 
     background-size: cover;
-    color: white; /* Make text readable on the background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute the space */
+    align-items: center;
 }
 
 /* Navbar Styles */
@@ -51,20 +55,25 @@ body {
 h1 {
     text-align: center;
     font-size: 50px;
-    margin-top: 20vh; /* Adjust to center vertically */
     font-family: 'Antic Didone', serif;
-    color: white;
+    margin: 0; /* Remove default margins */
+    padding: 50px 0; /* Adjust padding to center better */
+    z-index: 9999; /* Ensure it's above the background */
 }
 
 /* About Section */
-#about {
+#about, #portfolio {
     text-align: center;
     padding: 50px;
     background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+    margin-top: 0; /* Remove extra space */
 }
 
-/* Portfolio Section */
-#portfolio {
+/* Footer Section */
+footer {
     text-align: center;
-    padding: 50px;
-    background-color: rgba(0, 0
+    padding: 20px;
+    background-color: #2a5d3d;
+    color: white;
+    width: 100%;
+}
