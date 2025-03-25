@@ -9,7 +9,7 @@ html, body {
 .hero {
     position: relative;
     height: 100vh;  /* Full viewport height */
-    background-image: url('assets/images/WPParis1.JPEG'); /* Link your hero image here */
+    background-image: url('/assets/images/WPParis1.JPEG'); /* Ensure path is from the root */
     background-size: cover;  /* Make the image cover the whole screen */
     background-position: center;  /* Keep the image centered */
     background-repeat: no-repeat; /* Prevent repetition of the image */
