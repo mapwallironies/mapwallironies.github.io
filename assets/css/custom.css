@@ -1,31 +1,51 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background: url('assets/images/WPParis1.JPEG') no-repeat center center fixed; 
-    background-size: cover;
-    color: white;
+/* Ensure body and html fill the entire screen and remove unnecessary space */
+html, body {
+    height: 100%;  /* Ensure the body takes up the full height */
+    margin: 0;     /* Remove default margin */
+    padding: 0;    /* Remove default padding */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;  /* Full viewport height */
+    background-image: url('assets/images/WPParis1.JPEG');
+    background-size: cover;  /* Make the image cover the whole screen */
+    background-position: center;  /* Keep the image centered */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute the space */
+    justify-content: center;
     align-items: center;
+    color: white;  /* Ensure text stands out on image */
+    text-align: center;
+}
+
+/* Title Section (On top of the image) */
+.hero-text {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-family: 'Antic Didone', serif;
 }
 
 /* Navbar Styles */
 .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 93, 61, 0.8); /* Semi-transparent background */
+    padding: 15px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(42, 93, 61, 0.8); /* Transparent background */
-    padding: 15px 20px;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
 }
 
+/* Navbar Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -49,31 +69,4 @@ body {
 .nav-links a:hover {
     background-color: white;
     color: #2a5d3d;
-}
-
-/* Title Section */
-h1 {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Antic Didone', serif;
-    margin: 0; /* Remove default margins */
-    padding: 50px 0; /* Adjust padding to center better */
-    z-index: 9999; /* Ensure it's above the background */
-}
-
-/* About Section */
-#about, #portfolio {
-    text-align: center;
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
-    margin-top: 0; /* Remove extra space */
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2a5d3d;
-    color: white;
-    width: 100%;
 }
