@@ -226,33 +226,37 @@ header {
  }
 
 /* Photography Page */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Hide the scrollbar */
+}
+
 .photo-category {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  flex-wrap: wrap; /* Allows wrapping if the screen is small */
+  align-items: stretch;  /* Ensure images stretch vertically */
+  padding: 0;
+  height: 100vh;  /* Full viewport height */
 }
 
-/* Category style */
 .category {
   position: relative;
   flex: 1;
-  min-width: 30%; /* Ensures images take up equal space */
-  max-width: 32%; /* Adjust based on your preference */
-  overflow: hidden; /* Prevents images from spilling out */
-  border-radius: 0; /* Remove border-radius if you want no spacing at the edges */
+  min-width: 33.33%; /* Ensure images take equal space, 3 columns */
+  height: 100vh; /* Make each category stretch the full height of the viewport */
+  overflow: hidden; /* Prevents any image spilling over the edges */
 }
 
-/* Ensures images take up the full container space */
 .category img {
-  width: 100%; /* Ensures the image stretches to fill its container */
-  height: 100%; /* Ensures the image takes the full height */
-  object-fit: cover; /* Maintains aspect ratio and crops image if necessary */
+  width: 100%; /* Ensure the image stretches to fill its container */
+  height: 100%; /* Make the image cover the entire space */
+  object-fit: cover; /* Maintains aspect ratio and crops the image if necessary */
   transition: transform 0.3s ease-in-out;
 }
 
 .category:hover img {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Hover effect */
 }
 
 .overlay {
