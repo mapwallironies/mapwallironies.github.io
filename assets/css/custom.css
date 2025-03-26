@@ -295,7 +295,7 @@ body, html {
 
 .urban-category img {
   width: 100%;
-  height: auto; /* Allow height to adjust according to the aspect ratio */
+  height: 250px; /* Fixed height for uniformity */
   object-fit: cover; /* Ensures images fill the container without distortion */
   border-radius: 0; /* Remove rounded corners */
   transition: transform 0.3s ease-in-out;
@@ -374,4 +374,3 @@ body, html {
     max-width: 100%;
   }
 }
-
