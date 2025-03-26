@@ -4,8 +4,6 @@ title: Photography
 permalink: /photography/
 ---
 
-# Photography
-
 <div class="photo-category">
   <div class="category urban">
     <a href="/urban/">
