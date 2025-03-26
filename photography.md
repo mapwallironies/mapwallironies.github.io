@@ -1,18 +1,28 @@
 ---
-layout: page
-title: "Photography"
+layout: default
+title: Photography
 permalink: /photography/
 ---
 
-## Welcome to My Photography
+# Photography
 
-Here is a collection of my photography work displayed in a simple grid.
-
-<div class="photo-grid">
-  <img src="/assets/images/Aurora1.JPEG" alt="Photo 1">
-  <img src="/assets/images/KewStatue.JPEG" alt="Photo 2">
-  <img src="/assets/images/TowerbridgeUnder.JPEG" alt="Photo 3">
-  <img src="/assets/images/photo4.jpg" alt="Photo 4">
-  <img src="/assets/images/photo5.jpg" alt="Photo 5">
-  <img src="/assets/images/photo6.jpg" alt="Photo 6">
+<div class="photo-category">
+  <div class="category urban">
+    <a href="/urban/">
+      <img src="/assets/images/Urban_Kew1.JPEG" alt="Urban Photography">
+      <div class="overlay">Urban</div>
+    </a>
+  </div>
+  <div class="category natural">
+    <a href="/natural/">
+      <img src="/assets/images/Nature_Aurora1.JPEG" alt="Natural Photography">
+      <div class="overlay">Natural</div>
+    </a>
+  </div>
+  <div class="category life">
+    <a href="/life/">
+      <img src="/assets/images/Life_Boat.JPEG" alt="Life Photography">
+      <div class="overlay">Life</div>
+    </a>
+  </div>
 </div>
