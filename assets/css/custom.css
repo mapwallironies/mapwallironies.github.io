@@ -363,3 +363,44 @@ body, html {
     flex: 1 1 calc(100%); /* 1 image per row (100% per image) */
   }
 }
+
+/* For the landing page image and text */
+#landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures the section takes the full height of the screen */
+  padding: 0 15px; /* Optional: Add padding for smaller screens */
+  text-align: center; /* Ensure text is centered */
+}
+
+#landing-page img {
+  max-width: 100%;
+  height: auto; /* Ensures the image scales correctly */
+  object-fit: cover;
+}
+
+#landing-page .text-container {
+  position: relative;
+  z-index: 10; /* Keeps the text on top of the image */
+  color: white; /* Optional: Adjust text color for visibility */
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 600px) {
+  #landing-page {
+    height: auto; /* Allow height to adjust */
+    padding-top: 10px; /* Adds space above text for smaller screens */
+  }
+  
+  #landing-page img {
+    width: 100%; /* Ensure image fits the screen */
+    height: auto; /* Image scales with screen size */
+  }
+
+  #landing-page .text-container {
+    margin-top: 10px; /* Adds some space between the text and image */
+  }
+}
+
