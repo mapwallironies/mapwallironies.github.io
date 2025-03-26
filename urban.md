@@ -165,30 +165,6 @@ permalink: /urban/
          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
          loading="lazy">
   </div>
-  <div class="urban-category">
-    <img src="/assets/images/Urban_Car1.JPG" 
-         alt="Urban_Car1" 
-         srcset="/assets/images/Urban_Car1.JPG 300w, /assets/images/Urban_Car1.JPG 600w, /assets/images/Urban_Car1.JPG 1200w"
-         sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw">
-  </div>
-  <div class="urban-category">
-    <img src="/assets/images/Urban_FrenchCafe1.JPEG" 
-         alt="Urban_FrenchCafe1" 
-         srcset="/assets/images/Urban_FrenchCafe1.JPEG 300w, /assets/images/Urban_FrenchCafe1.JPEG 600w, /assets/images/Urban_FrenchCafe1.JPEG 1200w"
-         sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw">
-  </div>
-  <div class="urban-category">
-    <img src="/assets/images/Urban_TowerBridge1.JPEG" 
-         alt="Urban_TowerBridge1" 
-         srcset="/assets/images/Urban_TowerBridge1.JPEG 300w, /assets/images/Urban_TowerBridge1.JPEG 600w, /assets/images/Urban_TowerBridge1.JPEG 1200w"
-         sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw">
-  </div>
-  <div class="urban-category">
-    <img src="/assets/images/Urban_London2.JPEG" 
-         alt="Urban_London2" 
-         srcset="/assets/images/Urban_London2.JPEG 300w, /assets/images/Urban_London2.JPEG 600w, /assets/images/Urban_London2.JPEG 1200w"
-         sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw">
-  </div>
 </div>
 
 <!-- Fullscreen Modal -->
