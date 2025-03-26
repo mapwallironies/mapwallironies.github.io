@@ -229,7 +229,6 @@ header {
 .photo-category {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   padding: 20px;
   flex-wrap: wrap; /* Allows wrapping if the screen is small */
 }
@@ -241,9 +240,10 @@ header {
   min-width: 30%; /* Ensures images take up equal space */
   max-width: 32%; /* Adjust based on your preference */
   overflow: hidden; /* Prevents images from spilling out */
-  border-radius: 8px;
+  border-radius: 0; /* Remove border-radius if you want no spacing at the edges */
 }
 
+/* Ensures images take up the full container space */
 .category img {
   width: 100%; /* Ensures the image stretches to fill its container */
   height: 100%; /* Ensures the image takes the full height */
