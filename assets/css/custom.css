@@ -345,3 +345,30 @@ body, html {
     cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+  .urban-category {
+    flex: 1 1 calc(25% - 10px); /* 4 per row */
+    max-width: calc(25% - 10px);
+  }
+}
+
+@media (max-width: 900px) {
+  .urban-category {
+    flex: 1 1 calc(33.333% - 10px); /* 3 per row */
+    max-width: calc(33.333% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .urban-category {
+    flex: 1 1 calc(50% - 10px); /* 2 per row */
+    max-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 400px) {
+  .urban-category {
+    flex: 1 1 100%; /* 1 per row */
+    max-width: 100%;
+  }
+}
