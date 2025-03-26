@@ -231,18 +231,23 @@ header {
   justify-content: space-between;
   gap: 10px;
   padding: 20px;
+  flex-wrap: wrap; /* Allows wrapping if the screen is small */
 }
 
+/* Category style */
 .category {
   position: relative;
   flex: 1;
-  cursor: pointer;
+  min-width: 30%; /* Ensures images take up equal space */
+  max-width: 32%; /* Adjust based on your preference */
+  overflow: hidden; /* Prevents images from spilling out */
+  border-radius: 8px;
 }
 
 .category img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 100%; /* Ensures the image stretches to fill its container */
+  height: 100%; /* Ensures the image takes the full height */
+  object-fit: cover; /* Maintains aspect ratio and crops image if necessary */
   transition: transform 0.3s ease-in-out;
 }
 
