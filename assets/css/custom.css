@@ -280,41 +280,43 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  max-width: 90%;
-  margin: auto;
-  overflow: visible;  /* Ensures any content beyond the container is not hidden */
+  gap: 0; /* Remove gap between images */
+  margin: 0; /* Remove any margins */
+  width: 100%; /* Make gallery full width */
+  padding: 0 10px; /* Optional: Add some space on the sides */
 }
 
+/* Gallery Item */
 .urban-category {
-  flex: 1 1 calc(20% - 10px); /* Adjusts to 5 images per row (for desktop view) */
-  max-width: calc(20% - 10px); /* Keeps each image width in proportion */
+  flex: 1 1 calc(20% - 10px); /* Adjusts to 5 images per row */
+  max-width: calc(20% - 10px);
   box-sizing: border-box;
 }
 
+/* Image Styling */
 .urban-category img {
   width: 100%;
   height: 300px; /* Fixed height for uniformity */
-  object-fit: cover; /* Ensures images fill the container without distortion */
+  object-fit: cover; /* Ensure images fill the container */
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
 }
 
 .urban-category:hover img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Fullscreen Modal */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow: hidden;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
 }
 
 .modal-content {
@@ -328,48 +330,48 @@ body, html {
 }
 
 .close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .close:hover,
 .close:focus {
-  color: #ddd;
-  text-decoration: none;
-  cursor: pointer;
+    color: #ddd;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-/* Adjust grid for different screen sizes */
+/* Responsive Breakpoints */
 @media (max-width: 1200px) {
   .urban-category {
-    flex: 1 1 calc(25% - 10px); /* 4 images per row */
+    flex: 1 1 calc(25% - 10px); /* 4 per row */
     max-width: calc(25% - 10px);
   }
 }
 
 @media (max-width: 900px) {
   .urban-category {
-    flex: 1 1 calc(33.333% - 10px); /* 3 images per row */
+    flex: 1 1 calc(33.333% - 10px); /* 3 per row */
     max-width: calc(33.333% - 10px);
   }
 }
 
 @media (max-width: 600px) {
   .urban-category {
-    flex: 1 1 calc(50% - 10px); /* 2 images per row */
+    flex: 1 1 calc(50% - 10px); /* 2 per row */
     max-width: calc(50% - 10px);
   }
 }
 
 @media (max-width: 400px) {
   .urban-category {
-    flex: 1 1 100%; /* 1 image per row */
+    flex: 1 1 100%; /* 1 per row */
     max-width: 100%;
   }
 }
