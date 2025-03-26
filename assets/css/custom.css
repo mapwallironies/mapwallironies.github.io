@@ -315,10 +315,13 @@ body, html {
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    height: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: auto;
+  object-fit: contain;
 }
 
 .close {
