@@ -290,13 +290,13 @@ body.photography-page {
   margin: auto;
   overflow-y: auto;
   height: calc(100vh - 60px - 40px); /* Subtract navbar (60px) and footer (40px) heights */
-  padding-top: 60px; /* Optional: Adds space above the gallery to make room for the navbar */
+  padding-top: 60px; /* Adds space above the gallery to make room for the navbar */
   box-sizing: border-box;
 }
 
 /* Adjust height of each image container */
 .urban-category {
-  flex: 1 1 calc(25%); /* Adjusts to 4 images per row */
+  flex: 1 1 calc(25% - 8px); /* Ensures 4 images per row, considering gap between images */
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -311,10 +311,10 @@ body.photography-page {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Add more specific CSS if the navbar or footer is dynamic */
+/* Ensure the gallery scrolls within its allocated space */
 body.urban-page .urban-gallery {
-  overflow-y: auto;
-  height: calc(100vh - 60px - 40px); /* Adjust according to navbar and footer height */
+  overflow-y: auto; /* Enables scroll within the gallery */
+  height: calc(100vh - 60px - 40px); /* Maintain the height calculation for navbar/footer */
 }
 
 /* Fullscreen Modal */
