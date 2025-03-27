@@ -6,7 +6,7 @@ var modalImg = document.getElementById("fullscreenImage");
 // Loop through each image to add click event for full-screen
 images.forEach(function(image) {
   image.onclick = function() {
-    modal.style.display = "block";
+    modal.style.display = "flex"; // Use flex to center the modal
     modalImg.src = this.src;
   }
 });
