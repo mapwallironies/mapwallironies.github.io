@@ -328,6 +328,18 @@ body.urban-page .urban-gallery {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fullscreen image */
+.modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .modal-content {
