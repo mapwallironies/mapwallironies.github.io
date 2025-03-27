@@ -1,5 +1,4 @@
-// Get all images and the modal
-var images = document.querySelectorAll('.urban-category img');
+// Get the modal and the modal image
 var modal = document.getElementById("fullscreenModal");
 var modalImg = document.getElementById("fullscreenImage");
 
@@ -8,11 +7,11 @@ window.onload = function() {
   modal.style.display = "none"; // Ensure the modal starts as hidden
 }
 
-// Loop through each image to add click event for full-screen
-images.forEach(function(image) {
-  image.onclick = function() {
+// Add one event listener for the entire gallery container
+document.querySelector('.urban-gallery').addEventListener('click', function(event) {
+  if (event.target.tagName === 'IMG') {
     modal.style.display = "flex"; // Use flex to center the modal
-    modalImg.src = this.src;
+    modalImg.src = event.target.src;
   }
 });
 
