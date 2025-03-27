@@ -289,15 +289,14 @@ body.urban-page .urban-gallery {
   max-width: 90%;
   margin: auto;
   overflow-y: auto;
-  height: calc(100vh - 60px - 40px); /* Adjusts for navbar (60px) and footer (40px) heights */
-  padding-top: 60px; /* Adds space above the gallery for the navbar */
-  padding-bottom: 10px; /* Optional: Space at the bottom for more room */
+  height: auto; /* Removes fixed height to avoid overflow issues */
+  padding-top: 60px; /* Keeps room for the navbar */
   box-sizing: border-box;
 }
 
 /* Adjust height of each image container */
 body.urban-page .urban-category {
-  flex: 1 1 calc(25%); /* Adjusts to 4 images per row */
+  flex: 1 1 calc(25% - 8px); /* Keeps 4 images per row, considering the gap */
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -312,19 +311,14 @@ body.urban-page .urban-category img {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Optional: Apply body style adjustments for better layout on the urban page */
+/* Optional: For the body, make sure it is not stretched beyond the intended layout */
 body.urban-page {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
 }
 
 body.urban-page main {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Fullscreen Modal */
