@@ -289,7 +289,7 @@ body.photography-page {
   max-width: 90%; /* Optional: Keep the centering of the gallery */
   margin: auto;
   overflow-y: auto; /* Allow vertical scrolling */
-  height: 100vh; /* Ensures the gallery takes the full viewport height */
+  height: calc(100vh - 50px); /* Adjust the height for gallery only, considering navbar height */
 }
 
 .urban-category {
@@ -308,9 +308,9 @@ body.photography-page {
   transition: transform 0.3s ease-in-out;
 }
 
-body.urban-page .urban-gallery {
-  overflow-y: auto; /* Allow vertical scrolling */
-  height: 100vh; /* Ensure it takes full viewport height */
+/* Ensure the body doesn't scroll on the urban page */
+body.urban-page {
+  overflow: hidden; /* Prevents scrolling for the whole page */
 }
 
 /* Fullscreen Modal */
