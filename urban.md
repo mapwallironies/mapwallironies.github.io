@@ -4,12 +4,6 @@ title: Urban Photography
 permalink: /urban/
 ---
 
----
-layout: default
-title: Urban Photography
-permalink: /urban/
----
-
 <div class="urban-gallery">
   <div class="urban-category">
     <img src="/assets/images/Urban_London3@2x.jpg" 
