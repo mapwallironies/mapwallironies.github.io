@@ -14,7 +14,7 @@ html, body {
     position: relative;
     height: 100vh;
     background-image: url('/assets/images/WPParis1.JPEG');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
