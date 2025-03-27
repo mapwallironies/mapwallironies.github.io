@@ -275,6 +275,10 @@ body, html {
   border-radius: 5px;
 }
 
+body.photography-page {
+  overflow: hidden; /* Remove scrollbars */
+}
+
 /* Urban Gallery */
 .urban-gallery {
   display: flex;
@@ -302,6 +306,11 @@ body, html {
   object-fit: cover; /* Ensures images fill the container without distortion */
   border-radius: 0; /* Remove rounded corners */
   transition: transform 0.3s ease-in-out;
+}
+
+body.urban-page .urban-gallery {
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100vh; /* Ensure it takes full viewport height */
 }
 
 /* Fullscreen Modal */
