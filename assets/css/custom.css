@@ -279,8 +279,9 @@ body, html {
 .urban-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px; /* Added space between images */
+  justify-content: center; /* Centers the images horizontally */
+  align-items: center; /* Centers the images vertically */
+  gap: 8px; /* Reduced space between images */
   max-width: 90%; /* Optional: Keep the centering of the gallery */
   margin: auto;
   overflow-y: auto; /* Allow vertical scrolling */
@@ -290,6 +291,9 @@ body, html {
 .urban-category {
   flex: 1 1 calc(25%); /* Adjusts to 4 images per row */
   box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* Centers image horizontally within its container */
+  align-items: center; /* Centers image vertically within its container */
 }
 
 .urban-category img {
