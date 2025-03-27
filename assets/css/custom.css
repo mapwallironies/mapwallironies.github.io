@@ -300,10 +300,6 @@ body, html {
   transition: transform 0.3s ease-in-out;
 }
 
-.urban-category:hover img {
-  transform: scale(1.05);
-}
-
 /* Fullscreen Modal */
 .modal {
   display: none;
