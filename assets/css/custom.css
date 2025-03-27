@@ -321,7 +321,7 @@ body.urban-page .urban-gallery {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
@@ -334,14 +334,6 @@ body.urban-page .urban-gallery {
 }
 
 /* Fullscreen image */
-.modal-content {
-  max-width: 90vw;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
-
 .modal-content {
   max-width: 90vw;
   max-height: 90vh;
