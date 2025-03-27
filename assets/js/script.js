@@ -5,7 +5,7 @@ var modalImg = document.getElementById("fullscreenImage");
 // Add one event listener for the entire gallery container
 document.querySelector('.urban-gallery').addEventListener('click', function(event) {
   if (event.target.tagName === 'IMG') {
-    modal.style.display = "flex"; // Use flex to center the modal
+    modal.style.display = "flex"; // Show the modal when an image is clicked
     modalImg.src = event.target.src; // Set the clicked image as the modal content
   }
 });
