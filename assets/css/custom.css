@@ -387,6 +387,11 @@ body, html {
   color: white; /* Optional: Adjust text color for visibility */
 }
 
+/* Hide scrollbars for the landing page */
+body.landing-page {
+  overflow: hidden;
+}
+
 /* Adjustments for mobile screens */
 @media (max-width: 600px) {
   #landing-page {
@@ -485,36 +490,4 @@ body, html {
   .hero-text p {
     font-size: 1.2rem;
   }
-}
-
-/* Default (Light Mode) */
-:root {
-  --background-color: #ffffff;
-  --text-color: #000000;
-  --link-color: #0073e6;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-a {
-  color: var(--link-color);
-}
-
-/* Dark Mode */
-[data-theme="dark"] {
-  --background-color: #121212;
-  --text-color: #ffffff;
-  --link-color: #1e90ff;
-}
-
-[data-theme="dark"] body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-[data-theme="dark"] a {
-  color: var(--link-color);
 }
