@@ -288,9 +288,9 @@ body.photography-page {
   max-width: 90%;
   margin: auto;
   overflow-y: auto;
-  height: calc(100vh - 120px); /* Adjusted total height */
-  padding-top: 60px; /* Keeps space for navbar */
-  padding-bottom: 60px; /* Keeps space for footer */
+  min-height: calc(100vh - 120px); /* Ensures it always takes full space */
+  padding-top: 60px;
+  padding-bottom: 60px;
   box-sizing: border-box;
 }
 
