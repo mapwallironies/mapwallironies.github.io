@@ -1,488 +1,123 @@
-/* Add Montserrat font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevents horizontal scroll issues */
+}
 
-/* Ensure body and html fill the entire screen and remove unnecessary space */
-html, body {
-    height: 100%;  /* Ensure the body takes up the full height */
-    margin: 0;     /* Remove default margin */
-    padding: 0;    /* Remove default padding */
-    font-family: 'Montserrat', sans-serif;  /* Apply Montserrat to body */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%; /* Adjusted padding for better mobile fit */
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 90%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;  /* Full viewport height */
-    background-image: url('/assets/images/WPParis1.JPEG'); /* Ensure path is from the root */
-    background-size: cover;  /* Make the image cover the whole screen */
-    background-position: center;  /* Keep the image centered */
-    background-repeat: no-repeat; /* Prevent repetition of the image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;  /* Ensure text stands out on image */
-    text-align: center;
-    margin-top: 0; /* Remove any default margin */
+    width: 100%;
+    height: 100vh;
+    background: url('/assets/images/hero.jpg') center/cover no-repeat;
 }
 
-/* Title Section (On top of the image) */
 .hero-text {
     position: absolute;
-    z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 36px;
-    font-family: 'Montserrat', sans-serif; /* Change to Montserrat */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);  /* Adds a subtle black outline */
-    text-transform: uppercase;  /* Make title text uppercase */
-}
-
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(42, 93, 61, 0.8) !important; /* Semi-transparent background */
-    padding: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
-}
-
-/* Navbar Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
     color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
-    text-transform: uppercase;  /* Make navbar links uppercase */
-}
-
-.nav-links a:hover {
-    background-color: white;
-    color: #2a5d3d;
-}
-
-/* Title and Footer */
-footer {
-    display: block; /* Ensure footer stays visible */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(42, 93, 61, 0.8); /* Semi-transparent background */
-    color: white;
+    font-size: 4vw; /* Responsive font size */
     text-align: center;
-    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
-    text-transform: uppercase;  /* Make footer text uppercase */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
 }
 
-.site-title {
-    display: none; /* Hide the site title to prevent unnecessary space */
-}
-
-/* Remove unnecessary space at the top caused by the header */
-header {
-    display: none;  /* Hide the header element */
-}
-
-/* Mobile / Small Screen Adjustments */
-@media (max-width: 768px) {
-    /* Adjustments for Navbar */
-    .navbar {
-        padding: 10px;
-    }
-    
-    .nav-links {
-        flex-wrap: wrap;  /* Allow items to wrap to next line */
-        justify-content: center;  /* Center the items */
-    }
-
-    .nav-links a {
-        font-size: 16px;  /* Reduce font size for smaller screens */
-        padding: 10px 15px;  /* Adjust padding for smaller screen */
-    }
-
-    /* Adjust the About and Contact Section */
-    .about-contact {
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 80px;  /* Add space to top of the section to avoid overlap with the navbar */
-        padding-bottom: 80px;  /* Add space to bottom of the section to avoid overlap with the footer */
-    }
-    
-    .about, .contact {
-        max-width: 100%;  /* Allow sections to take up full width on mobile */
-        margin-top: 20px;  /* Add margin-top to avoid any content touching the navbar or footer */
-    }
-
-    /* Adjust the Hero Section */
-    .hero {
-        height: auto;  /* Allow the hero section to adjust its height based on content */
-    }
-}
-
-/* About and Contact Sections - Scoped for this page only */
-.about-contact {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.about {
-    flex: 1;
-    max-width: 45%;
-}
-
-.contact {
-    flex: 1;
-    max-width: 45%;
-}
-
-/* Contact Form Styling */
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact label {
-    font-size: 18px;
-    font-weight: bold;
-    color: #2a5d3d; /* Green color */
-}
-
-.contact input, .contact textarea {
-    padding: 12px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact button {
-    background-color: #2a5d3d; /* Green color */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.contact button:hover {
-    background-color: #1e4d31; /* Darker green on hover */
-}
-
-/* Styling the "Contact Me" section title */
-.contact h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #2a5d3d; /* Green color */
-}
-
-/* Adjusting the About section */
-.about h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #2a5d3d; /* Green color to match Contact section */
-}
-
-.about p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Make sections more mobile-responsive */
- @media (max-width: 768px) {
-     .about-contact {
-         flex-direction: column;
-         gap: 20px;
-     }
- 
-     .about, .contact {
-         max-width: 100%;
-     }
- }
-
-/* Photography Page */
-body, html {
-  height: 100%;
-  margin: 0;
-  overflow: hidden; /* Hide the scrollbar */
-}
-
+/* Photo Categories */
 .photo-category {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;  /* Ensure images stretch vertically */
-  padding: 0;
-  height: 100vh;  /* Full viewport height */
+    position: relative;
+    width: 100%;
+    height: min(100vh, 600px); /* Prevents overflow on mobile */
+    overflow: hidden;
 }
 
-.category {
-  position: relative;
-  flex: 1;
-  min-width: 33.33%; /* Ensure images take equal space, 3 columns */
-  height: 100vh; /* Make each category stretch the full height of the viewport */
-  overflow: hidden; /* Prevents any image spilling over the edges */
+.photo-category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
-.category img {
-  width: 100%; /* Ensure the image stretches to fill its container */
-  height: 100%; /* Make the image cover the entire space */
-  object-fit: cover; /* Maintains aspect ratio and crops the image if necessary */
-  transition: transform 0.3s ease-in-out;
-}
-
-.category:hover img {
-  transform: scale(1.05); /* Hover effect */
+.photo-category:hover img {
+    transform: scale(1.05);
 }
 
 .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Urban Gallery */
 .urban-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0; /* Remove the gap between images */
-  max-width: 90%; /* Optional: Keep the centering of the gallery */
-  margin: auto;
-  overflow-y: auto; /* Allow vertical scrolling */
-  height: 100vh; /* Ensures the gallery takes the full viewport height */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
 }
 
-.urban-category {
-  flex: 1 1 calc(25%); /* Adjusts to 4 images per row */
-  box-sizing: border-box;
+.urban-gallery img {
+    flex: 1 1 calc(25% - 10px);
+    max-width: calc(25% - 10px);
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.urban-category img {
-  width: 100%;
-  height: 250px; /* Fixed height for uniformity */
-  object-fit: cover; /* Ensures images fill the container without distortion */
-  border-radius: 0; /* Remove rounded corners */
-  transition: transform 0.3s ease-in-out;
+.urban-gallery img:hover {
+    transform: scale(1.05);
+    will-change: transform;
 }
 
-.urban-category:hover img {
-  transform: scale(1.05);
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .urban-gallery img {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
 }
 
-/* Fullscreen Modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow: hidden;
-}
-
-.modal-content {
-  max-width: 90vw;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  display: block;
-  margin: auto;
-  object-fit: contain;
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.close:hover,
-.close:focus {
-  color: #ddd;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Adjust grid for different screen sizes */
-@media (max-width: 1200px) {
-  .urban-category {
-    flex: 1 1 calc(33.333%); /* 3 images per row (33% per image) */
-  }
-}
-
-@media (max-width: 900px) {
-  .urban-category {
-    flex: 1 1 calc(50%); /* 2 images per row (50% per image) */
-  }
-}
-
-@media (max-width: 600px) {
-  .urban-category {
-    flex: 1 1 calc(100%); /* 1 image per row (100% per image) */
-  }
-}
-
-/* For the landing page image and text */
-#landing-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ensures the section takes the full height of the screen */
-  padding: 0 15px; /* Optional: Add padding for smaller screens */
-  text-align: center; /* Ensure text is centered */
-}
-
-#landing-page img {
-  max-width: 100%;
-  height: auto; /* Ensures the image scales correctly */
-  object-fit: cover;
-}
-
-#landing-page .text-container {
-  position: relative;
-  z-index: 10; /* Keeps the text on top of the image */
-  color: white; /* Optional: Adjust text color for visibility */
-}
-
-/* Adjustments for mobile screens */
-@media (max-width: 600px) {
-  #landing-page {
-    height: auto; /* Allow height to adjust */
-    padding-top: 10px; /* Adds space above text for smaller screens */
-  }
-  
-  #landing-page img {
-    width: 100%; /* Ensure image fits the screen */
-    height: auto; /* Image scales with screen size */
-  }
-
-  #landing-page .text-container {
-    margin-top: 10px; /* Adds some space between the text and image */
-  }
-}
-
-/* Ensure the image displays correctly on mobile */
-#home-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;  /* Adjusts the image to cover the area without stretching */
-  display: block;
-  margin: 0 auto;
-}
-
-/* Ensure text is centered */
-.home-text-container {
-  text-align: center;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 90%;  /* Adjusts the container width on mobile */
-}
-
-@media (max-width: 600px) {
-  .home-text-container {
-    padding: 10px;
-    text-align: center;
-  }
-}
-
-/* Allow scrolling on the about.md page */
-body, html {
-  height: 100%;
-  overflow: auto;  /* Ensures scrolling is enabled */
-}
-
-.about-page {
-  min-height: 100%;  /* Ensures the page stretches to full height */
-  padding-bottom: 20px;  /* Adjust this value if necessary */
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;  /* Adjusts the height to fill the screen */
-  overflow: hidden;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* Ensures the image covers the area */
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  /* Centers text in the middle */
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-}
-
-.hero-text p {
-  font-size: 1.5rem;
-}
-
-/* Ensure everything looks good on mobile */
-@media (max-width: 600px) {
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1.2rem;
-  }
+@media (max-width: 768px) {
+    .urban-gallery img {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .hero-text {
+        font-size: 5vw;
+    }
 }
