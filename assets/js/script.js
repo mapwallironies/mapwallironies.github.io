@@ -2,6 +2,11 @@
 var modal = document.getElementById("fullscreenModal");
 var modalImg = document.getElementById("fullscreenImage");
 
+// Force hide the modal as soon as the page loads
+document.addEventListener("DOMContentLoaded", function () {
+  modal.style.display = "none"; // Ensures it starts as hidden
+});
+
 // Add one event listener for the entire gallery container
 document.querySelector('.urban-gallery').addEventListener('click', function(event) {
   if (event.target.tagName === 'IMG') {
