@@ -511,7 +511,7 @@ body, html {
 
 /* Fullscreen Modal */
 .modal {
-  display: none !important; /* Force it to stay hidden until triggered */
+  display: none
   position: fixed;
   z-index: 1;
   left: 0;
