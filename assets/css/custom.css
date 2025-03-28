@@ -143,6 +143,7 @@ header {
 /* About and Contact Sections - Scoped for this page only */
 .about-contact {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 40px;
     padding: 40px 20px;
@@ -150,14 +151,32 @@ header {
     margin: 0 auto;
 }
 
+/* About Section with Image */
 .about {
     flex: 1;
-    max-width: 45%;
+    max-width: 50%;
 }
 
-.contact {
-    flex: 1;
-    max-width: 45%;
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-top: 2px solid #ddd;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2a5d3d; /* Green color */
 }
 
 /* Contact Form Styling */
@@ -194,13 +213,6 @@ header {
     background-color: #1e4d31; /* Darker green on hover */
 }
 
-/* Styling the "Contact Me" section title */
-.contact h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #2a5d3d; /* Green color */
-}
-
 /* Adjusting the About section */
 .about h1 {
     font-size: 28px;
@@ -213,15 +225,30 @@ header {
     line-height: 1.6;
 }
 
+/* Allow scrolling on the about.md page */
+body, html {
+  height: 100%;
+  overflow: auto;  /* Ensures scrolling is enabled */
+}
+
+.about-page {
+  min-height: 100%;  /* Ensures the page stretches to full height */
+  padding-bottom: 20px;  /* Adjust this value if necessary */
+}
+
 /* Make sections more mobile-responsive */
  @media (max-width: 768px) {
      .about-contact {
          flex-direction: column;
-         gap: 20px;
+         text-align: center;
      }
  
-     .about, .contact {
+     .about, .about-image {
          max-width: 100%;
+     }
+     
+     .about-image img {
+         max-width: 80%;
      }
  }
 
@@ -449,17 +476,6 @@ body.landing-page {
     padding: 10px;
     text-align: center;
   }
-}
-
-/* Allow scrolling on the about.md page */
-body, html {
-  height: 100%;
-  overflow: auto;  /* Ensures scrolling is enabled */
-}
-
-.about-page {
-  min-height: 100%;  /* Ensures the page stretches to full height */
-  padding-bottom: 20px;  /* Adjust this value if necessary */
 }
 
 /* Hero Section */
