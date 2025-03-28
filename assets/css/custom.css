@@ -122,41 +122,34 @@ header {
     }
 
     /* Adjust the About and Contact Section */
-    .about-contact {
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 80px;  /* Add space to top of the section to avoid overlap with the navbar */
-        padding-bottom: 80px;  /* Add space to bottom of the section to avoid overlap with the footer */
-    }
-    
-    .about, .contact {
-        max-width: 100%;  /* Allow sections to take up full width on mobile */
-        margin-top: 20px;  /* Add margin-top to avoid any content touching the navbar or footer */
-    }
-
-    /* Adjust the Hero Section */
-    .hero {
-        height: auto;  /* Allow the hero section to adjust its height based on content */
-    }
-}
-
-/* About and Contact Sections - Scoped for this page only */
 .about-contact {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    padding: 40px 20px;
+    padding: 80px 20px;  /* Adds space above/below to prevent overlap with navbar/footer */
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* About Section with Image */
+/* About Section */
 .about {
     flex: 1;
     max-width: 50%;
 }
 
+.about h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2a5d3d; /* Green color to match Contact section */
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* About Image */
 .about-image img {
     width: 100%;
     max-width: 400px;
@@ -165,18 +158,9 @@ header {
 }
 
 /* Contact Section */
-.contact-section {
-    text-align: center;
-    padding: 40px 20px;
-    max-width: 600px;
-    margin: 40px auto;
-    border-top: 2px solid #ddd;
-}
-
-.contact h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #2a5d3d; /* Green color */
+.contact {
+    flex: 1;
+    max-width: 50%;
 }
 
 /* Contact Form Styling */
@@ -197,6 +181,7 @@ header {
     font-size: 16px;
     border: 2px solid #ccc;
     border-radius: 5px;
+    width: 100%;
 }
 
 .contact button {
@@ -213,44 +198,49 @@ header {
     background-color: #1e4d31; /* Darker green on hover */
 }
 
-/* Adjusting the About section */
-.about h1 {
+/* Contact Section Title */
+.contact h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #2a5d3d; /* Green color to match Contact section */
+    color: #2a5d3d; /* Green color */
 }
 
-.about p {
-    font-size: 16px;
-    line-height: 1.6;
+/* Contact Section Divider */
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-top: 2px solid #ddd;
 }
 
-/* Allow scrolling on the about.md page */
+/* Ensure scrolling works properly */
 body, html {
-  height: 100%;
-  overflow: auto;  /* Ensures scrolling is enabled */
+    height: 100%;
+    overflow: auto;  /* Ensures scrolling is enabled */
 }
 
 .about-page {
-  min-height: 100%;  /* Ensures the page stretches to full height */
-  padding-bottom: 20px;  /* Adjust this value if necessary */
+    min-height: 100%;
+    padding-bottom: 20px;
 }
 
-/* Make sections more mobile-responsive */
- @media (max-width: 768px) {
-     .about-contact {
-         flex-direction: column;
-         text-align: center;
-     }
- 
-     .about, .about-image {
-         max-width: 100%;
-     }
-     
-     .about-image img {
-         max-width: 80%;
-     }
- }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-contact {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about, .contact {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        max-width: 80%;
+    }
+}
 
 /* Photography Page */
 body, html {
