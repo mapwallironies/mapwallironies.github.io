@@ -22,7 +22,7 @@ permalink: /natural/
   <div class="urban-category">
     <img src="/assets/images/Nature_Airsky@2x.jpg" 
          alt="Nature_Airsky" 
-         srcset="/assets/images/Nature_Airsky@2x.jpg 300w, /assets/images/Nature_Airsky@2x.jpg 600w, /assets/images/Nature_Airsky@2x.jpg 1200w"
+         srcset="/assets/images/Nature_Airsky1@2x.jpg 300w, /assets/images/Nature_Airsky1@2x.jpg 600w, /assets/images/Nature_Airsky1@2x.jpg 1200w"
          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
          loading="lazy">
   </div>
@@ -69,9 +69,9 @@ permalink: /natural/
          loading="lazy">
   </div>
   <div class="urban-category">
-    <img src="/assets/images/Nature_Suisse@2x.jpg" 
-         alt="Nature_Suisse" 
-         srcset="/assets/images/Nature_Suisse@2x.jpg 300w, /assets/images/Nature_Suisse@2x.jpg 600w, /assets/images/Nature_Suisse@2x.jpg 1200w"
+    <img src="/assets/images/Nature_Suisse1@2x.jpg" 
+         alt="Nature_Suisse1" 
+         srcset="/assets/images/Nature_Suisse1@2x.jpg 300w, /assets/images/Nature_Suisse1@2x.jpg 600w, /assets/images/Nature_Suisse1@2x.jpg 1200w"
          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
          loading="lazy">
   </div>
@@ -91,8 +91,8 @@ permalink: /natural/
   </div>
   <div class="urban-category">
     <img src="/assets/images/Nature_NorthShore1@2x.jpg" 
-         alt="Nature_Northshore1" 
-         srcset="/assets/images/Nature_Northshore1@2x.jpg 300w, /assets/images/Nature_Northshore1@2x.jpg 600w, /assets/images/Nature_Northshore1@2x.jpg 1200w"
+         alt="Nature_NorthShore1" 
+         srcset="/assets/images/Nature_NorthShore1@2x.jpg 300w, /assets/images/Nature_NorthShore1@2x.jpg 600w, /assets/images/Nature_NorthShore1@2x.jpg 1200w"
          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
          loading="lazy">
   </div>
