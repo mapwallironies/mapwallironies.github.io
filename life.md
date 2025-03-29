@@ -13,16 +13,9 @@ permalink: /life/
          loading="lazy">
   </div>
   <div class="urban-category">
-    <img src="/assets/images/Life_Air_Sun1@2x.jpg" 
-         alt="Life_Air_Sun1" 
-         srcset="/assets/images/Life_Air_Sun1@2x.jpg 300w, /assets/images/Life_Air_Sun1@2x.jpg 600w, /assets/images/Life_Air_Sun1@2x.jpg 1200w"
-         sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
-         loading="lazy">
-  </div>
-  <div class="urban-category">
-    <img src="/assets/images/Life_Cannes1@2x.jpg" 
-         alt="Life_Cannes1" 
-         srcset="/assets/images/Life_Cannes1@2x.jpg 300w, /assets/images/Life_Cannes1@2x.jpg 600w, /assets/images/Life_Cannes1@2x.jpg 1200w"
+    <img src="/assets/images/Life_AirSun1@2x.jpg" 
+         alt="Life_AirSun1" 
+         srcset="/assets/images/Life_AirSun1@2x.jpg 300w, /assets/images/Life_AirSun1@2x.jpg 600w, /assets/images/Life_AirSun1@2x.jpg 1200w"
          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
          loading="lazy">
   </div>
@@ -44,6 +37,13 @@ permalink: /life/
     <img src="/assets/images/Life_Ski1@2x.jpg" 
          alt="Life_Ski1" 
          srcset="/assets/images/Life_Ski1@2x.jpg 300w, /assets/images/Life_Ski1@2x.jpg 600w, /assets/images/Life_Ski1@2x.jpg 1200w"
+         sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+         loading="lazy">
+  </div>
+  <div class="urban-category">
+    <img src="/assets/images/Life_Cannes1@2x.jpg" 
+         alt="Life_Cannes1" 
+         srcset="/assets/images/Life_Cannes1@2x.jpg 300w, /assets/images/Life_Cannes1@2x.jpg 600w, /assets/images/Life_Cannes1@2x.jpg 1200w"
          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
          loading="lazy">
   </div>
