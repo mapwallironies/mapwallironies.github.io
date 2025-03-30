@@ -55,3 +55,11 @@ permalink: /artwork/
          loading="lazy" class="tall">
   </div>
 </div>
+
+<!-- Fullscreen Modal -->
+<div id="fullscreenModal" class="modal">
+  <span class="close" onclick="closeFullscreen()">&times;</span>
+  <img id="fullscreenImage" class="modal-content" />
+</div>
+
+<!-- Your content for Artwork -->
