@@ -218,10 +218,17 @@ header {
      .about-contact {
          flex-direction: column;
          gap: 20px;
+         padding-bottom: 40px;
      }
  
      .about, .contact {
          max-width: 100%;
+         text-align: center;
+
+     .contact button {
+        width: 100%; /* Make button full-width on mobile */
+        max-width: 250px; /* Prevent it from becoming too wide */
+        margin: 0 auto; /* Center the button */
      }
  }
 
