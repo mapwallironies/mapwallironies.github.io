@@ -362,6 +362,21 @@ body.urban-page .urban-gallery {
   cursor: pointer;
 }
 
+/* Watermark for fullscreen images */
+.modal::after {
+  content: "© William Pearson | Map Wall Ironies";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Adjust grid for different screen sizes */
 @media (max-width: 1200px) {
   .urban-category {
