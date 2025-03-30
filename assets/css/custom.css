@@ -363,6 +363,11 @@ body.urban-page .urban-gallery {
 }
 
 /* Watermark for fullscreen images */
+/* Watermark overlay on fullscreen image */
+.modal-content {
+  position: relative; /* Needed for absolute positioning of the watermark */
+}
+
 .modal::after {
   content: "© William Pearson | Map Wall Ironies";
   position: absolute;
@@ -375,6 +380,7 @@ body.urban-page .urban-gallery {
   border-radius: 5px;
   pointer-events: none;
   font-family: 'Montserrat', sans-serif;
+  z-index: 1001; /* Ensure it's above the image */
 }
 
 /* Adjust grid for different screen sizes */
