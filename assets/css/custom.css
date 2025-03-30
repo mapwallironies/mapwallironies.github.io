@@ -126,7 +126,7 @@ header {
         flex-direction: column;
         gap: 20px;
         padding-top: 80px;  /* Add space to top of the section to avoid overlap with the navbar */
-        padding-bottom: 120px;  /* Add space to bottom of the section to avoid overlap with the footer */
+        padding-bottom: 80px;  /* Add space to bottom of the section to avoid overlap with the footer */
     }
     
     .about, .contact {
@@ -218,17 +218,10 @@ header {
      .about-contact {
          flex-direction: column;
          gap: 20px;
-         padding-bottom: 40px;
      }
  
      .about, .contact {
          max-width: 100%;
-         text-align: center;
-
-     .contact button {
-        width: 100%; /* Make button full-width on mobile */
-        max-width: 250px; /* Prevent it from becoming too wide */
-        margin: 0 auto; /* Center the button */
      }
  }
 
