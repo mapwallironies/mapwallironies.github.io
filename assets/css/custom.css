@@ -541,3 +541,8 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
+/* Temporarily show watermark for testing */
+.watermark {
+  display: block !important;
+}
