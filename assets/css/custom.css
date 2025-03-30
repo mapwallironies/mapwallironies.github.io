@@ -358,6 +358,7 @@ body.urban-page .urban-gallery {
   font-family: 'Montserrat', sans-serif;
   pointer-events: none;
   z-index: 1100; /* Make sure it's on top */
+  display: none;   
 }
 
 /* Close button */
