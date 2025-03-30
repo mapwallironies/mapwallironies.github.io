@@ -126,7 +126,7 @@ header {
         flex-direction: column;
         gap: 20px;
         padding-top: 80px;  /* Add space to top of the section to avoid overlap with the navbar */
-        padding-bottom: 80px;  /* Add space to bottom of the section to avoid overlap with the footer */
+        padding-bottom: 120px;  /* Add space to bottom of the section to avoid overlap with the footer */
     }
     
     .about, .contact {
