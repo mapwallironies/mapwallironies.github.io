@@ -1,7 +1,6 @@
-// Get the modal, modal image, and watermark
+// Get the modal and the modal image
 var modal = document.getElementById("fullscreenModal");
 var modalImg = document.getElementById("fullscreenImage");
-var watermark = document.querySelector('.watermark');  // The watermark element
 
 // Ensure the modal is hidden on page load
 window.onload = function() {
